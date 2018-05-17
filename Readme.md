@@ -1,6 +1,6 @@
 # A FGPA based 8x8 audio mixer
 
-![Alt text](Board.jpg)
+![Alt text](Board.jpg =800x)
 
 # The projects contains:
 * 80C81   Silicon lab firmware to manage FPGA and handle USB user input/output
