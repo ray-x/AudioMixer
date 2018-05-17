@@ -1,0 +1,5 @@
+ngdbuild -ise "AudioMixer.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-vq100-5 top.ngc top.ngd  
+map -ise "AudioMixer.ise" -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+xst -ise "D:/projects/AudioMixer/FPGA_CODE/FPGA_CODE/AudioMixer/AudioMixer.ise" -intstyle ise -ifn "D:/projects/AudioMixer/FPGA_CODE/FPGA_CODE/AudioMixer/top.xst" -ofn "D:/projects/AudioMixer/FPGA_CODE/FPGA_CODE/AudioMixer/top.syr" 
+ngdbuild -ise "AudioMixer.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-vq100-5 top.ngc top.ngd  
+map -ise "AudioMixer.ise" -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 

@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator L.33
+# Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION L.33
+DATE            01/04/2010 - 23:32
+SOURCE          E:\AudioMixer_Prj\MyCode\AudioMixer\AudioMixer\mixer_2.mcs
+DEVICE          XCF01S
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x012EA617
+START_ADDRESS   0x00000000 END_ADDRESS 0x0000D5AD DIRECTION_UP   "E:/AudioMixer_Prj/MyCode/AudioMixer/AudioMixer/top.bit" 3s50avq100

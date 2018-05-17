@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AudioMixer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF9.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/AudioMixer.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\VCWork\AudioMixer6\AudioMixer\MixChConf.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF9.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFA.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/AudioMixer.pdb" /debug /machine:I386 /out:"Debug/AudioMixer.exe" /pdbtype:sept 
+.\Debug\AudioMixer.obj
+.\Debug\AudioMixerDlg.obj
+.\Debug\ConectMgr.obj
+.\Debug\ConfData.obj
+.\Debug\ConfigMgr.obj
+.\Debug\inifile.obj
+.\Debug\InputVolAdjDlg.obj
+.\Debug\MixChConf.obj
+.\Debug\MixConf.obj
+.\Debug\OutputVolAdjDlg.obj
+.\Debug\SchemeMgr.obj
+.\Debug\serialport.obj
+.\Debug\StdAfx.obj
+.\Debug\VolAdjDlgBox.obj
+.\Debug\VolCtl.obj
+.\Debug\VolTab.obj
+.\Debug\Wait.obj
+.\Debug\AudioMixer.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFA.tmp"
+<h3>Output Window</h3>
+Compiling...
+MixChConf.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFB.tmp" with contents
+[
+/nologo /o"Debug/AudioMixer.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\AudioMixer.sbr
+.\Debug\AudioMixerDlg.sbr
+.\Debug\ConectMgr.sbr
+.\Debug\ConfData.sbr
+.\Debug\ConfigMgr.sbr
+.\Debug\inifile.sbr
+.\Debug\InputVolAdjDlg.sbr
+.\Debug\MixChConf.sbr
+.\Debug\MixConf.sbr
+.\Debug\OutputVolAdjDlg.sbr
+.\Debug\SchemeMgr.sbr
+.\Debug\serialport.sbr
+.\Debug\VolAdjDlgBox.sbr
+.\Debug\VolCtl.sbr
+.\Debug\VolTab.sbr
+.\Debug\Wait.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFB.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+AudioMixer.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

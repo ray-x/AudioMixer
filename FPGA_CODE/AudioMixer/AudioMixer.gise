@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="AudioMixer.ntrc_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BCD" xil_pn:name="AudioMixer_xdb/cst.xbcd"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="clk_gen.v"/>
+    <file xil_pn:fileType="FILE_UCF" xil_pn:name="clk_gen_arwz.ucf" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="ipcore_dir/clk_gen.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="top.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="top.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="top.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="top.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="top.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="top.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="top.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="top.prj"/>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="top.sdc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="top.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="top.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="top.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="top_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="top_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="top_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="top_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="top_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="top_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="top_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="top_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="top_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="top_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="top_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="xaw2verilog.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1263107082" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1263107082">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1263107082" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="6332085398686684413" xil_pn:start_ts="1263107082">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1263107082" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-6750348999741908932" xil_pn:start_ts="1263107082">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1263107082" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1263107082">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1263107083" xil_pn:in_ck="3965674788778973920" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="5917217509834150101" xil_pn:start_ts="1263107082">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="clk_gen.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1263107083" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:start_ts="1263107083">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1263107083" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="4506871059306942875" xil_pn:start_ts="1263107083">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1263107138" xil_pn:in_ck="9133365869157034316" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="7600040626398802113" xil_pn:start_ts="1263107083">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="AudioMixer.ntrc_log"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="top.cmd_log"/>
+      <outfile xil_pn:name="top.lso"/>
+      <outfile xil_pn:name="top.ngc"/>
+      <outfile xil_pn:name="top.ngr"/>
+      <outfile xil_pn:name="top.prj"/>
+      <outfile xil_pn:name="top.stx"/>
+      <outfile xil_pn:name="top.syr"/>
+      <outfile xil_pn:name="top.xst"/>
+      <outfile xil_pn:name="top_summary.html"/>
+      <outfile xil_pn:name="top_xst.xrpt"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1263107139" xil_pn:in_ck="-8301414189806509951" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3734212952611957" xil_pn:start_ts="1263107138">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="AudioMixer_xdb/cst.xbcd"/>
+    </transform>
+    <transform xil_pn:end_ts="1263107151" xil_pn:in_ck="-7698167305283281382" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4143406480806300382" xil_pn:start_ts="1263107139">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="top.bld"/>
+      <outfile xil_pn:name="top.cmd_log"/>
+      <outfile xil_pn:name="top.ngd"/>
+      <outfile xil_pn:name="top_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1263107177" xil_pn:in_ck="-7698167305283281381" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-6669344237188240082" xil_pn:start_ts="1263107151">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="top.pcf"/>
+      <outfile xil_pn:name="top_map.map"/>
+      <outfile xil_pn:name="top_map.mrp"/>
+      <outfile xil_pn:name="top_map.ncd"/>
+      <outfile xil_pn:name="top_map.ngm"/>
+      <outfile xil_pn:name="top_map.xrpt"/>
+      <outfile xil_pn:name="top_summary.xml"/>
+      <outfile xil_pn:name="top_usage.xml"/>
+    </transform>
+  </transforms>
+
+</generated_project>

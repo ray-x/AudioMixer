@@ -1,0 +1,37 @@
+Selecting top level module top
+@N: CG364 :"D:\Program Files\Synplicity\fpga_961\bin\..\lib\xilinx\unisim.v":569:7:569:10|Synthesizing module BUFG
+
+@N: CG364 :"D:\Program Files\Synplicity\fpga_961\bin\..\lib\xilinx\unisim.v":11732:7:11732:11|Synthesizing module IBUFG
+
+@N: CG364 :"D:\Program Files\Synplicity\fpga_961\bin\..\lib\xilinx\unisim.v":1188:7:1188:12|Synthesizing module DCM_SP
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\AudioMixer\clk_gen.v":23:7:23:13|Synthesizing module clk_gen
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\ws_bck_gen.v":17:7:17:16|Synthesizing module ws_bck_gen
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\channel_rx.v":17:7:17:16|Synthesizing module channel_rx
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\channel_tx.v":17:7:17:16|Synthesizing module channel_tx
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\adder16.v":2:7:2:13|Synthesizing module adder16
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\adder16_8.v":2:7:2:15|Synthesizing module adder16_8
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\mul_gain.v":2:7:2:14|Synthesizing module mul_gain
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\cmd_decoder.v":2:7:2:17|Synthesizing module cmd_decoder
+
+@W: CL169 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\cmd_decoder.v":236:0:236:5|Pruning Register data_r[7:0] 
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\top.v":3:7:3:9|Synthesizing module top
+
+@W: CL169 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\top.v":275:0:275:5|Pruning Register mcu_data_r[7:0] 
+
+@W: CL246 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\mul_gain.v":8:13:8:14|Input port bits 3 to 0 of IN[15:0] are unused
+
+@W: CL190 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\ws_bck_gen.v":44:0:44:5|Optimizing register bit cnt_bck[3] to a constant 0
+@W: CL190 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\ws_bck_gen.v":44:0:44:5|Optimizing register bit cnt_ws[4] to a constant 0
+@W: CL171 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\ws_bck_gen.v":44:0:44:5|Pruning Register bit <4> of cnt_ws[4:0] 
+
+@W: CL171 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\ws_bck_gen.v":44:0:44:5|Pruning Register bit <3> of cnt_bck[3:0] 
+

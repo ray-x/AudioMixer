@@ -1,0 +1,52 @@
+License checkout: synplifypro
+
+
+Starting:    D:\Program Files\Synplicity\fpga_961\bin\mbin\synbatch.exe
+Install:     D:\Program Files\Synplicity\fpga_961
+Date:        Sun Jan 10 14:56:03 2010
+Version:     9.6.1
+
+
+Arguments:   -product synplify_pro -batch  top.prj -tcl top_map.tcl
+ProductType: synplify_pro
+
+License checkout: synplifypro
+License: synplifypro node-locked 
+Running in Vendor Mode
+
+
+
+"modular" is unrecognized option for current device
+
+Running synthesis on top:AudioMixer
+
+log file: "D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\AudioMixer\top.srr"
+
+
+Running Verilog Compiler...
+
+Verilog Compiler Completed
+Return Code: 0
+
+
+Running Analysis Property Generator...
+
+Launching mapper in pro mode
+
+Analysis Property Generator Completed
+Return Code: 0
+
+
+Analysis Property Generator Complete
+
+Running SPARTAN3A Mapper...
+
+Launching mapper in pro mode
+
+SPARTAN3A Mapper Completed with warnings
+Return Code: 1
+
+
+exit status=0
+
+

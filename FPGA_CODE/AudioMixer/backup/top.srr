@@ -1,0 +1,1097 @@
+#Build: Synplify Pro 9.6.1, Build 038R, Sep 17 2008
+#install: D:\Program Files\Synplicity\fpga_961
+#OS: Windows XP 5.1
+#Hostname: RAYX
+
+#Implementation: AudioMixer
+
+#Sun Jan 10 14:56:03 2010
+
+$ Start of Compile
+#Sun Jan 10 14:56:03 2010
+
+Synplicity Verilog Compiler, version 1.0, Build 011R, built Sep 25 2008
+Copyright (C) 1994-2008, Synplicity Inc.  All Rights Reserved
+
+@I::"D:\Program Files\Synplicity\fpga_961\lib\xilinx\unisim.v"
+@I::"D:\Program Files\Synplicity\fpga_961\bin\..\lib\xilinx\unisim.v"
+@I::"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\adder16.v"
+@I::"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\adder16_8.v"
+@I::"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\mul_gain.v"
+@I::"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\ws_bck_gen.v"
+@I::"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\cmd_decoder.v"
+@I::"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\channel_tx.v"
+@I::"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\channel_rx.v"
+@I::"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\AudioMixer\clk_gen.v"
+@I::"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\top.v"
+Verilog syntax check successful!
+Selecting top level module top
+@N: CG364 :"D:\Program Files\Synplicity\fpga_961\bin\..\lib\xilinx\unisim.v":569:7:569:10|Synthesizing module BUFG
+
+@N: CG364 :"D:\Program Files\Synplicity\fpga_961\bin\..\lib\xilinx\unisim.v":11732:7:11732:11|Synthesizing module IBUFG
+
+@N: CG364 :"D:\Program Files\Synplicity\fpga_961\bin\..\lib\xilinx\unisim.v":1188:7:1188:12|Synthesizing module DCM_SP
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\AudioMixer\clk_gen.v":23:7:23:13|Synthesizing module clk_gen
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\ws_bck_gen.v":17:7:17:16|Synthesizing module ws_bck_gen
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\channel_rx.v":17:7:17:16|Synthesizing module channel_rx
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\channel_tx.v":17:7:17:16|Synthesizing module channel_tx
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\adder16.v":2:7:2:13|Synthesizing module adder16
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\adder16_8.v":2:7:2:15|Synthesizing module adder16_8
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\mul_gain.v":2:7:2:14|Synthesizing module mul_gain
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\cmd_decoder.v":2:7:2:17|Synthesizing module cmd_decoder
+
+@W: CL169 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\cmd_decoder.v":236:0:236:5|Pruning Register data_r[7:0] 
+
+@N: CG364 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\top.v":3:7:3:9|Synthesizing module top
+
+@W: CL169 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\top.v":275:0:275:5|Pruning Register mcu_data_r[7:0] 
+
+@W: CL246 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\mul_gain.v":8:13:8:14|Input port bits 3 to 0 of IN[15:0] are unused
+
+@W: CL190 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\ws_bck_gen.v":44:0:44:5|Optimizing register bit cnt_bck[3] to a constant 0
+@W: CL190 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\ws_bck_gen.v":44:0:44:5|Optimizing register bit cnt_ws[4] to a constant 0
+@W: CL171 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\ws_bck_gen.v":44:0:44:5|Pruning Register bit <4> of cnt_ws[4:0] 
+
+@W: CL171 :"D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\src\ws_bck_gen.v":44:0:44:5|Pruning Register bit <3> of cnt_bck[3:0] 
+
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Jan 10 14:56:05 2010
+
+###########################################################]
+Synplicity Xilinx Technology Mapper, Version 9.6, Build 056R, Built Sep 25 2008 13:48:55
+Copyright (C) 1994-2008, Synplicity Inc.  All Rights Reserved
+Product Version Version 9.6.1
+Reading constraint file: D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\AudioMixer\top.sdc
+@N: MF249 |Running in 32-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+Reading Xilinx I/O pad type table from file <D:\Program Files\Synplicity\fpga_961\lib\xilinx\x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file <D:\Program Files\Synplicity\fpga_961\lib\xilinx\gttype.txt> 
+
+Automatic dissolve during optimization of view:work.adder16_8(verilog) of adder16_ins7(adder16)
+Automatic dissolve during optimization of view:work.adder16_8(verilog) of adder16_ins6(adder16)
+Automatic dissolve during optimization of view:work.adder16_8(verilog) of adder16_ins5(adder16)
+Automatic dissolve during optimization of view:work.adder16_8(verilog) of adder16_ins4(adder16)
+Automatic dissolve during optimization of view:work.adder16_8(verilog) of adder16_ins3(adder16)
+Automatic dissolve during optimization of view:work.adder16_8(verilog) of adder16_ins2(adder16)
+Automatic dissolve during optimization of view:work.adder16_8(verilog) of adder16_ins1(adder16)
+Automatic dissolve at startup in view:work.mul_gain(verilog) of adder16_8_ins1(adder16_8_adder16_8_ins1)
+Automatic dissolve at startup in view:work.cmd_decoder(verilog) of adder16_8_ins8(adder16_8)
+Automatic dissolve at startup in view:work.cmd_decoder(verilog) of adder16_8_ins7(adder16_8)
+Automatic dissolve at startup in view:work.cmd_decoder(verilog) of adder16_8_ins6(adder16_8)
+Automatic dissolve at startup in view:work.cmd_decoder(verilog) of adder16_8_ins5(adder16_8)
+Automatic dissolve at startup in view:work.cmd_decoder(verilog) of adder16_8_ins4(adder16_8)
+Automatic dissolve at startup in view:work.cmd_decoder(verilog) of adder16_8_ins3(adder16_8)
+Automatic dissolve at startup in view:work.cmd_decoder(verilog) of adder16_8_ins2(adder16_8)
+Automatic dissolve at startup in view:work.cmd_decoder(verilog) of adder16_8_ins1(adder16_8)
+Automatic dissolve at startup in view:work.top(verilog) of channel_rx_ins3(channel_rx)
+Automatic dissolve at startup in view:work.top(verilog) of channel_rx_ins2(channel_rx)
+Automatic dissolve at startup in view:work.top(verilog) of channel_rx_ins1(channel_rx)
+Automatic dissolve at startup in view:work.top(verilog) of channel_rx_ins0(channel_rx)
+Automatic dissolve at startup in view:work.top(verilog) of ws_bck_gen_ins(ws_bck_gen)
+Automatic dissolve at startup in view:work.top(verilog) of clk_gen_ins(clk_gen)
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":50:0:50:5|Removing sequential instance channel_rx_ins3.bck_reg,  because it is equivalent to instance bck_reg
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":50:0:50:5|Removing sequential instance channel_rx_ins2.bck_reg,  because it is equivalent to instance bck_reg
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":50:0:50:5|Removing sequential instance channel_rx_ins1.bck_reg,  because it is equivalent to instance bck_reg
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":50:0:50:5|Removing sequential instance channel_rx_ins0.bck_reg,  because it is equivalent to instance bck_reg
+@N: MT206 |Autoconstrain Mode is ON
+Finished RTL optimizations (Time elapsed 0h:00m:01s; Memory used current: 97MB peak: 102MB)
+
+Dissolving instances of view:work.channel_tx(verilog) before factorization cost=206, pathcnt=4
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_tx.v":46:0:46:5|Removing instance channel_tx_ins1.ws_reg,  because it is equivalent to instance channel_tx_ins0.ws_reg
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_tx.v":46:0:46:5|Removing instance channel_tx_ins2.ws_reg,  because it is equivalent to instance channel_tx_ins0.ws_reg
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_tx.v":46:0:46:5|Removing instance channel_tx_ins3.ws_reg,  because it is equivalent to instance channel_tx_ins0.ws_reg
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":194:0:194:5|Removing instance ws_reg,  because it is equivalent to instance channel_tx_ins0.ws_reg
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_tx.v":38:0:38:5|Removing instance channel_tx_ins1.bck_reg[0],  because it is equivalent to instance channel_tx_ins0.bck_reg[0]
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_tx.v":38:0:38:5|Removing instance channel_tx_ins2.bck_reg[0],  because it is equivalent to instance channel_tx_ins0.bck_reg[0]
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_tx.v":38:0:38:5|Removing instance channel_tx_ins3.bck_reg[0],  because it is equivalent to instance channel_tx_ins0.bck_reg[0]
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":202:0:202:5|Removing instance bck_reg,  because it is equivalent to instance channel_tx_ins0.bck_reg[0]
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_tx.v":38:0:38:5|Removing instance channel_tx_ins2.bck_reg[1],  because it is equivalent to instance channel_tx_ins3.bck_reg[1]
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_tx.v":38:0:38:5|Removing instance channel_tx_ins1.bck_reg[1],  because it is equivalent to instance channel_tx_ins3.bck_reg[1]
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_tx.v":38:0:38:5|Removing instance channel_tx_ins0.bck_reg[1],  because it is equivalent to instance channel_tx_ins3.bck_reg[1]
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_tx.v":38:0:38:5|Removing instance channel_tx_ins1.bck_reg[2],  because it is equivalent to instance channel_tx_ins0.bck_reg[2]
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_tx.v":38:0:38:5|Removing instance channel_tx_ins2.bck_reg[2],  because it is equivalent to instance channel_tx_ins0.bck_reg[2]
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_tx.v":38:0:38:5|Removing instance channel_tx_ins3.bck_reg[2],  because it is equivalent to instance channel_tx_ins0.bck_reg[2]
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_tx.v":38:0:38:5|Removing instance channel_tx_ins2.bck_reg[3],  because it is equivalent to instance channel_tx_ins3.bck_reg[3]
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_tx.v":38:0:38:5|Removing instance channel_tx_ins1.bck_reg[3],  because it is equivalent to instance channel_tx_ins3.bck_reg[3]
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_tx.v":38:0:38:5|Removing instance channel_tx_ins0.bck_reg[3],  because it is equivalent to instance channel_tx_ins3.bck_reg[3]
+Auto Dissolve of cmd_decoder_ins (inst of view:work.cmd_decoder(verilog))
+Finished factoring (Time elapsed 0h:00m:01s; Memory used current: 100MB peak: 102MB)
+
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_tx.v":46:0:46:5|Removing instance channel_tx_ins0.ws_reg,  because it is equivalent to instance cmd_decoder_ins.ws_reg
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":211:0:211:5|Removing sequential instance data_left0[3] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":211:0:211:5|Removing sequential instance data_left0[2] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":211:0:211:5|Removing sequential instance data_left0[1] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":211:0:211:5|Removing sequential instance data_left0[0] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":211:0:211:5|Removing sequential instance data_left1[3] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":211:0:211:5|Removing sequential instance data_left1[2] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":211:0:211:5|Removing sequential instance data_left1[1] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":211:0:211:5|Removing sequential instance data_left1[0] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":211:0:211:5|Removing sequential instance data_left2[3] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":211:0:211:5|Removing sequential instance data_left2[2] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":211:0:211:5|Removing sequential instance data_left2[1] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":211:0:211:5|Removing sequential instance data_left2[0] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":211:0:211:5|Removing sequential instance data_left3[3] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":211:0:211:5|Removing sequential instance data_left3[2] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":211:0:211:5|Removing sequential instance data_left3[1] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":211:0:211:5|Removing sequential instance data_left3[0] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":230:0:230:5|Removing sequential instance data_right0[3] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":230:0:230:5|Removing sequential instance data_right0[2] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":230:0:230:5|Removing sequential instance data_right0[1] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":230:0:230:5|Removing sequential instance data_right0[0] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":230:0:230:5|Removing sequential instance data_right1[3] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":230:0:230:5|Removing sequential instance data_right1[2] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":230:0:230:5|Removing sequential instance data_right1[1] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":230:0:230:5|Removing sequential instance data_right1[0] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":230:0:230:5|Removing sequential instance data_right2[3] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":230:0:230:5|Removing sequential instance data_right2[2] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":230:0:230:5|Removing sequential instance data_right2[1] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":230:0:230:5|Removing sequential instance data_right2[0] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":230:0:230:5|Removing sequential instance data_right3[3] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":230:0:230:5|Removing sequential instance data_right3[2] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":230:0:230:5|Removing sequential instance data_right3[1] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":230:0:230:5|Removing sequential instance data_right3[0] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_left_buf0[3] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_left_buf0[2] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_left_buf0[1] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_left_buf0[0] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_left_buf1[3] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_left_buf1[2] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_left_buf1[1] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_left_buf1[0] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_left_buf2[3] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_left_buf2[2] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_left_buf2[1] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_left_buf2[0] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_left_buf3[3] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_left_buf3[2] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_left_buf3[1] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_left_buf3[0] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_right_buf0[3] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_right_buf0[2] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_right_buf0[1] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_right_buf0[0] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_right_buf1[3] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_right_buf1[2] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_right_buf1[1] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_right_buf1[0] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_right_buf2[3] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_right_buf2[2] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_right_buf2[1] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_right_buf2[0] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_right_buf3[3] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_right_buf3[2] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_right_buf3[1] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Removing sequential instance data_right_buf3[0] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+
+
+######### START OF GENERATED CLOCK OPTIMIZATION REPORT #########[
+
+================================================================
+		Instance:Pin		Generated Clock Optimization Status
+================================================================
+		ws_bck_gen_ins.cnt_ws[0]						Not Done
+
+
+######### END OF GENERATED CLOCK OPTIMIZATION REPORT #########]
+
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:02s; Memory used current: 105MB peak: 110MB)
+
+@N: FX430 |Found 2 global buffers instantiated by user 
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:03s; Memory used current: 104MB peak: 110MB)
+
+@N: FX404 :"d:\projects\audiomixer\fpga_code\fpga_code\src\adder16.v":9:18:9:23|Found addmux in view:work.top(verilog) inst cmd_decoder_ins.codec2_out_4[15:10],cmd_decoder_ins.codec2_out_4_i_m2[9:6],cmd_decoder_ins.codec2_out_4[5:0] from cmd_decoder_ins.adder16_8_ins4.adder16_ins7.S_1_0[15:0] 
+@N: FX404 :"d:\projects\audiomixer\fpga_code\fpga_code\src\adder16.v":9:18:9:23|Found addmux in view:work.top(verilog) inst cmd_decoder_ins.codec3_out_4[15:9],cmd_decoder_ins.codec3_out_4_i_m2[8],cmd_decoder_ins.codec3_out_4[7:0] from cmd_decoder_ins.adder16_8_ins6.adder16_ins7.S_1_0[15:0] 
+@N: FX404 :"d:\projects\audiomixer\fpga_code\fpga_code\src\adder16.v":9:18:9:23|Found addmux in view:work.top(verilog) inst cmd_decoder_ins.codec4_out_4[15:2],cmd_decoder_ins.codec4_out_4_i_m2[1:0] from cmd_decoder_ins.adder16_8_ins8.adder16_ins7.S_1_0[15:0] 
+@N: FX404 :"d:\projects\audiomixer\fpga_code\fpga_code\src\adder16.v":9:18:9:23|Found addmux in view:work.top(verilog) inst cmd_decoder_ins.codec1_out_4[15:8],cmd_decoder_ins.codec1_out_4_i_m2[7],cmd_decoder_ins.codec1_out_4[6:0] from cmd_decoder_ins.adder16_8_ins2.adder16_ins7.S_1_0[15:0] 
+Starting Early Timing Optimization (Time elapsed 0h:00m:25s; Memory used current: 165MB peak: 165MB)
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:34s; Memory used current: 168MB peak: 168MB)
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:35s; Memory used current: 164MB peak: 169MB)
+
+Finished preparing to map (Time elapsed 0h:00m:43s; Memory used current: 165MB peak: 169MB)
+
+Finished technology mapping (Time elapsed 0h:00m:46s; Memory used current: 161MB peak: 174MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:49s		    -6.49ns		10832 /       922
+   2		0h:00m:49s		    -6.35ns		10832 /       922
+   3		0h:00m:50s		    -6.35ns		10832 /       922
+   4		0h:00m:51s		    -6.35ns		10832 /       922
+   5		0h:00m:52s		    -6.35ns		10832 /       922
+   6		0h:00m:52s		    -6.35ns		10832 /       922
+   7		0h:00m:53s		    -6.35ns		10832 /       922
+------------------------------------------------------------
+
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":62:0:62:5|Removing sequential instance channel_rx_ins1.data_reg_4565,  because it is equivalent to instance channel_rx_ins0.data_reg_4572
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":62:0:62:5|Removing sequential instance channel_rx_ins2.data_reg_4558,  because it is equivalent to instance channel_rx_ins0.data_reg_4572
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":62:0:62:5|Removing sequential instance channel_rx_ins3.data_reg_4551,  because it is equivalent to instance channel_rx_ins0.data_reg_4572
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":62:0:62:5|Removing sequential instance channel_rx_ins2.data_reg_4559,  because it is equivalent to instance channel_rx_ins3.data_reg_4552
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":62:0:62:5|Removing sequential instance channel_rx_ins1.data_reg_4566,  because it is equivalent to instance channel_rx_ins3.data_reg_4552
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":62:0:62:5|Removing sequential instance channel_rx_ins0.data_reg_4573,  because it is equivalent to instance channel_rx_ins3.data_reg_4552
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":62:0:62:5|Removing sequential instance channel_rx_ins1.data_reg_4567,  because it is equivalent to instance channel_rx_ins0.data_reg_4574
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":62:0:62:5|Removing sequential instance channel_rx_ins2.data_reg_4560,  because it is equivalent to instance channel_rx_ins0.data_reg_4574
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":62:0:62:5|Removing sequential instance channel_rx_ins3.data_reg_4553,  because it is equivalent to instance channel_rx_ins0.data_reg_4574
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":62:0:62:5|Removing sequential instance channel_rx_ins2.data_reg_4561,  because it is equivalent to instance channel_rx_ins3.data_reg_4554
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":62:0:62:5|Removing sequential instance channel_rx_ins1.data_reg_4568,  because it is equivalent to instance channel_rx_ins3.data_reg_4554
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":62:0:62:5|Removing sequential instance channel_rx_ins0.data_reg_4575,  because it is equivalent to instance channel_rx_ins3.data_reg_4554
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":62:0:62:5|Removing sequential instance channel_rx_ins1.data_reg_4569,  because it is equivalent to instance channel_rx_ins0.data_reg_4576
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":62:0:62:5|Removing sequential instance channel_rx_ins2.data_reg_4562,  because it is equivalent to instance channel_rx_ins0.data_reg_4576
+@W: BN132 :"d:\projects\audiomixer\fpga_code\fpga_code\src\channel_rx.v":62:0:62:5|Removing sequential instance channel_rx_ins3.data_reg_4555,  because it is equivalent to instance channel_rx_ins0.data_reg_4576
+Timing driven replication report
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0[15]" with 88 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3[15]" with 120 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0[15]" with 106 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2[9]" with 96 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3[15]" with 120 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2[8]" with 80 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1[9]" with 79 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0[9]" with 72 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2[11]" with 136 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3[11]" with 128 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1[9]" with 64 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2[11]" with 120 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1[11]" with 120 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3[10]" with 119 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1[15]" with 88 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3[8]" with 56 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2[15]" with 80 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2[15]" with 80 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3[10]" with 104 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3[9]" with 96 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1[10]" with 95 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0[11]" with 95 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2[10]" with 89 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0[10]" with 88 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0[10]" with 80 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2[8]" with 72 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1[8]" with 72 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0[11]" with 118 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0[12]" with 112 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3[12]" with 112 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1[15]" with 96 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to6_gain[6]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to2_gain[6]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to8_gain[6]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to1_gain[6]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to3_gain[6]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to5_gain[6]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to7_gain[6]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to7_gain[7]" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to3_gain[7]" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to2_gain[7]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to4_gain[7]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to6_gain[7]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to8_gain[7]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to1_gain[7]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to5_gain[7]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3[7]" with 56 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1[11]" with 102 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1[6]" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to4_gain[6]" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0[6]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2[10]" with 120 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to6_gain[7]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to4_gain[7]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to8_gain[7]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to2_gain[7]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to1_gain[7]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to5_gain[7]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3[7]" with 48 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2[7]" with 48 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1[7]" with 48 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0[8]" with 48 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0[7]" with 48 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to3_gain[7]" with 21 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to7_gain[7]" with 21 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to8_gain[6]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to6_gain[6]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to2_gain[6]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to5_gain[6]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to7_gain[6]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to3_gain[6]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to1_gain[6]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2[9]" with 87 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to1_gain[1]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to3_gain[1]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to6_gain[1]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to7_gain[1]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to8_gain[1]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to5_gain[1]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to4_gain[1]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to2_gain[1]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3[11]" with 140 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to4_gain[6]" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to1_gain[4]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to8_gain[4]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to2_gain[4]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to6_gain[4]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to7_gain[4]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to3_gain[4]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to5_gain[4]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to4_gain[4]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1[10]" with 103 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2[13]" with 134 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3[6]" with 40 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0[7]" with 40 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0[9]" with 72 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1[5]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to6_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to1_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to2_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to7_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to4_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to8_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to2_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to4_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to7_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to8_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to5_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to6_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to3_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to5_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to3_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to1_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to2_gain[7]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to8_gain[7]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2[5]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2[5]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3[5]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to3_gain[7]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to5_gain[7]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to4_gain[7]" with 15 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to6_gain[7]" with 15 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to7_gain[7]" with 15 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to1_gain[7]" with 15 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to3_gain[4]" with 15 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to5_gain[4]" with 15 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to4_gain[4]" with 15 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to6_gain[4]" with 15 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to1_gain[4]" with 15 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to2_gain[4]" with 15 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to8_gain[4]" with 15 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to7_gain[4]" with 15 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to6_gain[7]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to2_gain[7]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to8_gain[7]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to4_gain[7]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to7_gain[7]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to1_gain[7]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to3_gain[7]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2[12]" with 120 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3[12]" with 120 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1[13]" with 120 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2[6]" with 33 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to5_gain[7]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to3_gain[3]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to1_gain[3]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to3_gain[3]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to5_gain[3]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to7_gain[3]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to4_gain[3]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to4_gain[3]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to5_gain[3]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to8_gain[3]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to2_gain[3]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to7_gain[3]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to1_gain[3]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to6_gain[3]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to6_gain[3]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to8_gain[3]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to2_gain[3]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0[12]" with 116 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2[6]" with 32 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2[13]" with 112 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2[12]" with 144 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to4_gain[6]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to5_gain[6]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to7_gain[6]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to5_gain[1]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to2_gain[1]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to1_gain[1]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to6_gain[1]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to7_gain[1]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to8_gain[1]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to4_gain[1]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to3_gain[1]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3[9]" with 101 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1[6]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1[12]" with 128 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to8_gain[6]" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to6_gain[6]" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to2_gain[6]" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to3_gain[6]" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to1_gain[6]" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to5_gain[5]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to6_gain[5]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to8_gain[5]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to2_gain[5]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to3_gain[5]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to1_gain[5]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to4_gain[5]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to7_gain[5]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3[13]" with 90 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to8_gain[7]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to2_gain[7]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to4_gain[6]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to5_gain[6]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to7_gain[6]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3[8]" with 80 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to4_gain[7]" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to6_gain[7]" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to7_gain[7]" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to1_gain[7]" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to5_gain[7]" with 18 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to8_gain[6]" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to2_gain[6]" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to6_gain[6]" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to3_gain[6]" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to1_gain[6]" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to4_gain[5]" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to8_gain[5]" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to2_gain[5]" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to6_gain[5]" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to1_gain[5]" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to5_gain[5]" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to7_gain[5]" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to3_gain[5]" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1[8]" with 64 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to5_gain[2]" with 10 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to2_gain[2]" with 10 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to6_gain[2]" with 10 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to6_gain[6]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to2_gain[6]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to8_gain[6]" with 15 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to4_gain[6]" with 15 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to1_gain[6]" with 15 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to3_gain[6]" with 15 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to5_gain[6]" with 15 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to7_gain[6]" with 15 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to1_gain[5]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to4_gain[5]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to2_gain[5]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to5_gain[5]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to3_gain[5]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to7_gain[5]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to8_gain[5]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to6_gain[5]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to6_gain[5]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to4_gain[5]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to2_gain[5]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to7_gain[5]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to1_gain[5]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to2_gain[5]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to6_gain[5]" with 14 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to3_gain[4]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to5_gain[4]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to8_gain[4]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to6_gain[4]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to2_gain[4]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to7_gain[4]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to1_gain[4]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to4_gain[4]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0[13]" with 112 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to2_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to3_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to8_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to5_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to6_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to4_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to7_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to1_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to8_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to4_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to7_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to3_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to1_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to5_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to8_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to5_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to3_gain[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to5_gain[4]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to3_gain[4]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to7_gain[4]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to2_gain[4]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to4_gain[4]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to1_gain[2]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to3_gain[2]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to7_gain[2]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to4_gain[2]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to6_gain[2]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to5_gain[2]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to2_gain[2]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to8_gain[2]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3[13]" with 110 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to2_gain[1]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to4_gain[1]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to6_gain[1]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to7_gain[1]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to1_gain[1]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to5_gain[1]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to8_gain[1]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to3_gain[1]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to3_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to1_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to4_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to7_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_1to8_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to7_gain[4]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to2_gain[4]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to5_gain[4]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to4_gain[4]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to3_gain[4]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to8_gain[4]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to1_gain[4]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to6_gain[4]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to6_gain[3]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to2_gain[3]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to5_gain[3]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to1_gain[4]" with 10 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to8_gain[4]" with 10 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to6_gain[4]" with 10 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to3_gain[3]" with 10 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to7_gain[3]" with 10 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to1_gain[3]" with 10 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to4_gain[3]" with 10 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to8_gain[3]" with 10 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to8_gain[2]" with 10 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to7_gain[2]" with 10 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to1_gain[2]" with 10 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to5_gain[2]" with 10 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to4_gain[2]" with 10 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to6_gain[2]" with 10 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0[8]" with 72 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1[13]" with 96 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1[12]" with 120 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to1_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to6_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to8_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to3_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to2_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to4_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to1_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to5_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to6_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to4_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to7_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to7_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to2_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to5_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to3_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to8_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to5_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to3_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to8_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to7_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to4_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to1_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to6_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to2_gain[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to5_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to1_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to7_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to6_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to4_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to8_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to3_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to2_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to5_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to1_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to7_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to3_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to8_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to2_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to4_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to6_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to3_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to2_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to3_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to8_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to6_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to1_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to2_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to5_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to7_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to4_gain[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to2_gain[2]" with 10 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to3_gain[2]" with 10 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to5_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to7_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to6_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to8_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to1_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to4_gain[2]" with 9 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2[14]" with 131 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0[14]" with 103 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to7_gain[4]" with 11 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to6_gain[4]" with 11 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to3_gain[4]" with 11 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to4_gain[4]" with 11 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to8_gain[4]" with 11 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to2_gain[4]" with 11 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to1_gain[4]" with 11 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to5_gain[4]" with 11 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3[14]" with 98 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2[14]" with 88 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0[13]" with 112 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1[14]" with 87 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to8_gain[6]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to4_gain[6]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to7_gain[6]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to5_gain[6]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to3_gain[6]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to1_gain[6]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1[14]" with 75 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to6_gain[6]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to2_gain[6]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0[14]" with 104 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to3_gain[7]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to6_gain[4]" with 15 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to1_gain[4]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to8_gain[4]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to2_gain[4]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to7_gain[4]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to3_gain[4]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to4_gain[4]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_4to5_gain[4]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to6_gain[4]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to1_gain[4]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to7_gain[4]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to5_gain[4]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to4_gain[4]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to8_gain[4]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to2_gain[4]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to3_gain[4]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1[7]" with 64 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3[6]" with 48 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2[7]" with 64 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to2_gain[7]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to4_gain[7]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to8_gain[7]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to6_gain[7]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to1_gain[7]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to5_gain[7]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to7_gain[7]" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to3_gain[7]" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to2_gain[6]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to6_gain[6]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to8_gain[6]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to4_gain[6]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to3_gain[6]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to7_gain[6]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to1_gain[6]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to5_gain[6]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to4_gain[6]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to2_gain[6]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to6_gain[6]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to8_gain[6]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to5_gain[6]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to7_gain[6]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to3_gain[6]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to1_gain[6]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to8_gain[5]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to3_gain[5]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to6_gain[5]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to7_gain[5]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to1_gain[5]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to4_gain[5]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to5_gain[5]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_6to2_gain[5]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to5_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to2_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to4_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to8_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to5_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to1_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to7_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to7_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to6_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to4_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to1_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to8_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to3_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_2to6_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to3_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_5to2_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to4_gain[5]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to6_gain[5]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to2_gain[5]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to8_gain[5]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to7_gain[5]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to3_gain[5]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to1_gain[5]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_3to5_gain[5]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3[14]" with 134 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0[6]" with 32 loads has been replicated 2 time(s) to improve timing 
+Added 881 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+Timing driven replication report
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_fast[9]" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0_fast[15]" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_fast[15]" with 21 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_fast[11]" with 28 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_fast[11]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_fast[11]" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_fast[10]" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_fast[11]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_fast[10]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_fast[9]" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1_fast[10]" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_fast[10]" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0_fast[11]" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_fast[10]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_fast[15]" with 21 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0_15_rep1" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_fast[11]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_fast[12]" with 23 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_fast[12]" with 21 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1_fast[11]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1_fast[15]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_fast[10]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_fast[10]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_fast[11]" with 31 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_fast[13]" with 28 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_fast[12]" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_fast[12]" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_fast[13]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_fast[13]" with 23 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0_fast[12]" with 21 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_fast[9]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_fast[12]" with 30 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_fast[12]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_fast[8]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_fast[13]" with 23 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_fast[13]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0_11_rep1" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_9_rep1" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1_fast[13]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1_fast[12]" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_fast[14]" with 27 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_12_rep1" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0_fast[14]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_10_rep1" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_fast[14]" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_fast[14]" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_fast[14]" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0_fast[13]" with 23 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1_10_rep1" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_10_rep1" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_13_rep1" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1_11_rep1" with 21 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_fast[14]" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_13_rep1" with 23 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_13_rep1" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_11_rep1" with 28 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_14_rep1" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_14_rep1" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_14_rep1" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_9_rep1" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_9_rep1" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_15_rep1" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_10_rep1" with 28 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_11_rep1" with 27 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_11_rep1" with 27 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_10_rep1" with 23 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_8_rep1" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_8_rep1" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_11_rep1" with 33 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_11_rep1" with 30 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_12_rep1" with 29 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_12_rep1" with 28 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_15_rep1" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0_13_rep1" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_8_rep2" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_9_rep2" with 23 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_9_rep1" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1_15_rep1" with 21 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_9_rep2" with 19 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_9_rep2" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_8_rep2" with 19 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_8_rep2" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_13_rep1" with 31 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_12_rep1" with 29 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_13_rep1" with 27 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_13_rep2" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_10_rep2" with 29 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_12_rep1" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_10_rep1" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_14_rep1" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_10_rep2" with 21 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0_14_rep1" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_9_rep1" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_14_rep1" with 30 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_11_rep1" with 32 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_10_rep1" with 28 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_10_rep2" with 25 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_14_rep2" with 24 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_14_rep2" with 21 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_14_rep2" with 21 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_10_rep2" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_11_rep2" with 34 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_12_rep1" with 34 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_12_rep2" with 28 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_11_rep2" with 30 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_12_rep2" with 29 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_13_rep1" with 20 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1_14_rep2" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_12_rep2" with 30 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_13_rep2" with 35 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_13_rep2" with 30 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_15_rep1" with 29 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_10_rep2" with 33 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_11_rep2" with 32 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_fast[14]" with 30 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_11_rep2" with 36 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_11_rep2" with 33 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1_12_rep1" with 30 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0_12_rep1" with 30 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_12_rep2" with 39 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_15_rep2" with 31 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_12_rep2" with 35 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_11_rep2" with 34 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3_13_rep2" with 31 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_15_rep2" with 30 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_13_rep2" with 33 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_12_rep2" with 31 loads has been replicated 2 time(s) to improve timing 
+Added 264 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+Timing driven replication report
+No replication required.
+
+Timing driven replication report
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_9_rep2" with 28 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf3_9_rep2" with 36 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0_9_rep1" with 30 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_8_rep2" with 29 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1_15_rep2" with 34 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf0_15_rep2" with 31 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf2_15_rep2" with 31 loads has been replicated 2 time(s) to improve timing 
+Added 16 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+Timing driven replication report
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to8_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to7_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to1_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to4_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to3_gain[3]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to2_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to5_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_8to6_gain[3]" with 16 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_7_rep2" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0_10_rep2" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf0_9_rep2" with 22 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf1_11_rep2" with 29 loads has been replicated 2 time(s) to improve timing 
+Added 24 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:01m:16s		    -5.23ns		11002 /      2096
+Timing driven replication report
+No replication required.
+
+   2		0h:01m:17s		    -5.23ns		11002 /      2096
+   3		0h:01m:18s		    -5.23ns		11002 /      2096
+   4		0h:01m:20s		    -5.23ns		11007 /      2096
+   5		0h:01m:21s		    -5.23ns		11007 /      2096
+   6		0h:01m:23s		    -5.23ns		11007 /      2096
+------------------------------------------------------------
+
+Timing driven replication report
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1[9]" with 27 loads has been replicated 2 time(s) to improve timing 
+Added 2 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+Timing driven replication report
+No replication required.
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:01m:27s		    -5.28ns		11034 /      2098
+   2		0h:01m:27s		    -5.28ns		11042 /      2098
+Timing driven replication report
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to5_gain[1]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to8_gain[1]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to6_gain[1]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to1_gain[1]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to4_gain[1]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to7_gain[1]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to2_gain[1]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":253:0:253:5|Instance "cmd_decoder_ins.codec_7to3_gain[1]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_right_buf2_15_rep2" with 37 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf1_15_rep2" with 33 loads has been replicated 3 time(s) to improve timing 
+Added 14 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+   3		0h:01m:28s		    -5.28ns		11042 /      2112
+   4		0h:01m:29s		    -5.27ns		11048 /      2112
+   5		0h:01m:30s		    -5.27ns		11048 /      2112
+   6		0h:01m:31s		    -5.20ns		11098 /      2112
+   7		0h:01m:33s		    -5.20ns		11129 /      2112
+   8		0h:01m:34s		    -5.20ns		11134 /      2112
+   9		0h:01m:35s		    -5.20ns		11134 /      2112
+------------------------------------------------------------
+
+Net buffering Report for view:work.top(verilog):
+@N: FX103 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":262:10:262:31|Instance "data_left_buf06" with "693" loads has been replicated "6" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"d:\projects\audiomixer\fpga_code\fpga_code\src\cmd_decoder.v":220:11:227:29|Instance "cmd_decoder_ins.un1_codec1_out7_i_x4" with "133" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"d:\projects\audiomixer\fpga_code\fpga_code\src\top.v":249:0:249:5|Instance "data_left_buf3[15]" with "187" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX104 |Net "mcu_data_c[7]" with "160" loads has been buffered by "2" buffers due to a soft fanout limit of "100" 
+@N: FX104 |Net "mcu_data_c[6]" with "193" loads has been buffered by "2" buffers due to a soft fanout limit of "100" 
+@N: FX104 |Net "mcu_data_c[5]" with "193" loads has been buffered by "2" buffers due to a soft fanout limit of "100" 
+@N: FX104 |Net "mcu_data_c[4]" with "153" loads has been buffered by "2" buffers due to a soft fanout limit of "100" 
+@N: FX104 |Net "mcu_data_c[3]" with "169" loads has been buffered by "2" buffers due to a soft fanout limit of "100" 
+@N: FX104 |Net "mcu_data_c[2]" with "127" loads has been buffered by "2" buffers due to a soft fanout limit of "100" 
+@N: FX104 |Net "mcu_data_c[1]" with "121" loads has been buffered by "2" buffers due to a soft fanout limit of "100" 
+Added 14 Buffers
+Added 1 Registers via replication
+Added 7 LUTs via replication
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:01m:38s; Memory used current: 163MB peak: 174MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+Finished restoring hierarchy (Time elapsed 0h:01m:41s; Memory used current: 168MB peak: 174MB)
+
+Writing Analyst data base D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\AudioMixer\top.srm
+@N: BN225 |Writing default property annotation file D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\AudioMixer\top.map.
+Finished Writing Netlist Databases (Time elapsed 0h:01m:47s; Memory used current: 170MB peak: 175MB)
+
+Writing EDIF Netlist and constraint files
+Reading Xilinx net attributes from file <D:\Program Files\Synplicity\fpga_961\lib\xilinx\netattr.txt> 
+Version 9.6.1
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:01m:50s; Memory used current: 171MB peak: 175MB)
+
+Starting Writing Gated Clock Conversion Report (Time elapsed 0h:01m:52s; Memory used current: 171MB peak: 175MB)
+
+@N: MF276 |Gated clock conversion enabled, but no gated clocks found in design 
+Finished Writing Gated Clock Conversion Report (Time elapsed 0h:01m:52s; Memory used current: 171MB peak: 175MB)
+
+Starting Writing Generated Clock Conversion Report (Time elapsed 0h:01m:52s; Memory used current: 171MB peak: 175MB)
+
+@N: MF333 |Generated clock conversion enabled, but no generated clocks found in design 
+Finished Writing Generated Clock Conversion Report (Time elapsed 0h:01m:52s; Memory used current: 171MB peak: 175MB)
+
+Found clock top|clk with period 15.37ns 
+Found clock top|clk_gen_ins.CLKDV_BUF_derived_clock with period 15.37ns 
+Found clock top|clk_gen_ins.CLK0_BUF_derived_clock with period 15.37ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sun Jan 10 14:58:05 2010
+#
+
+
+Top view:               top
+Requested Frequency:    65.0 MHz
+Wire load mode:         top
+Paths requested:        0
+Constraint File(s):    D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\AudioMixer\top.sdc
+                       
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -2.713
+
+                                            Requested     Estimated     Requested     Estimated                Clock                      Clock                
+Starting Clock                              Frequency     Frequency     Period        Period        Slack      Type                       Group                
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+top|clk_gen_ins.CLKDV_BUF_derived_clock     65.0 MHz      55.3 MHz      15.373        18.086        -2.713     derived (from top|clk)     Autoconstr_clkgroup_0
+===============================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                 Ending                                   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+top|clk_gen_ins.CLKDV_BUF_derived_clock  top|clk_gen_ins.CLKDV_BUF_derived_clock  |  15.373      -2.713  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report for top 
+
+Mapping to part: xc3s50avq100-5
+Cell usage:
+BUF             14 uses
+DCM_SP          1 use
+FDC             12 uses
+FDCE            1937 uses
+FDE             4 uses
+FDPE            160 uses
+GND             15 uses
+MULT_AND        560 uses
+MUXCY_L         4080 uses
+MUXF5           18 uses
+VCC             5 uses
+XORCY           4312 uses
+LUT1            3 uses
+LUT2            3698 uses
+LUT3            1859 uses
+LUT4            5570 uses
+
+I/O ports: 52
+I/O primitives: 52
+IBUF           20 uses
+IBUFG          1 use
+OBUF           31 uses
+
+BUFG           2 uses
+
+SRL primitives:
+SRL16E         4 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   2113 (150%)
+
+Global Clock Buffers: 2 of 24 (8%)
+
+Total load per clock:
+   top|clk_gen_ins.CLKDV_BUF_derived_clock: 1
+
+Mapping Summary:
+Total  LUTs: 11134 (790%)
+
+Mapper successful!
+Process took 0h:01m:58s realtime, 0h:01m:53s cputime
+# Sun Jan 10 14:58:06 2010
+
+###########################################################]

@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator L.33
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o E:\AudioMixer_Prj\MyCode\AudioMixer\AudioMixer//mixer_vol_set -x xcf01s -u 00000000 E:/AudioMixer_Prj/MyCode/AudioMixer/AudioMixer/top.bit 
+
+PROM E:\AudioMixer_Prj\MyCode\AudioMixer\AudioMixer\mixer_vol_set.prm map: Wed Jan 06 02:09:14 2010
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          128K
+PROM start    0000:0000
+PROM end      0001:ffff
+PROM checksum 012ef0df
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0000:d5ad     Jan 06 01:40:57 2010 E:/AudioMixer_Prj/MyCode/AudioMixer/AudioMixer/top.bit

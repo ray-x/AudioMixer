@@ -1,0 +1,33 @@
+Synplicity Xilinx Technology Mapper, Version 9.6, Build 056R, Built Sep 25 2008 13:48:55
+Copyright (C) 1994-2008, Synplicity Inc.  All Rights Reserved
+Product Version Version 9.6.1
+Reading constraint file: D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\AudioMixer\top.sdc
+@N: MF249 |Running in 32-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+Reading Xilinx I/O pad type table from file <D:\Program Files\Synplicity\fpga_961\lib\xilinx\x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file <D:\Program Files\Synplicity\fpga_961\lib\xilinx\gttype.txt> 
+
+@W: BN126 :|*Net "CLK0" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "CLK180" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "CLK270" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "CLK2X" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "CLK2X180" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "CLK90" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "CLKDV" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "CLKFX" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "CLKFX180" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "LOCKED" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "PSDONE" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "STATUS[0]" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "STATUS[1]" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "STATUS[2]" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "STATUS[3]" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "STATUS[4]" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "STATUS[5]" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "STATUS[6]" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@W: BN126 :|*Net "STATUS[7]" in VIRTEX.DCM_SP(PRIM) is missing a driver 
+@N: BN225 |Writing default property annotation file D:\projects\AudioMixer\FPGA_CODE\FPGA_CODE\AudioMixer\top.sap.
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Jan 10 14:59:49 2010
+
+###########################################################]

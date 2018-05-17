@@ -1,0 +1,64 @@
+//! **************************************************************************
+// Written by: Map L.33 on Sun Jan 10 15:06:12 2010
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P40" LEVEL 1;
+PIN clk_pin<0> = BEL "clk" PINNAME PAD;
+PIN "clk_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "ad_xclk<0>" LOCATE = SITE "P41" LEVEL 1;
+COMP "ad_xclk<1>" LOCATE = SITE "P60" LEVEL 1;
+COMP "ad_xclk<2>" LOCATE = SITE "P73" LEVEL 1;
+COMP "ad_xclk<3>" LOCATE = SITE "P88" LEVEL 1;
+COMP "nRst" LOCATE = SITE "P48" LEVEL 1;
+COMP "mcu_cs0" LOCATE = SITE "P31" LEVEL 1;
+COMP "mcu_cs1" LOCATE = SITE "P29" LEVEL 1;
+COMP "mcu_l3clk" LOCATE = SITE "P30" LEVEL 1;
+COMP "ad_di<0>" LOCATE = SITE "P93" LEVEL 1;
+COMP "ad_di<1>" LOCATE = SITE "P52" LEVEL 1;
+COMP "ad_di<2>" LOCATE = SITE "P65" LEVEL 1;
+COMP "ad_di<3>" LOCATE = SITE "P94" LEVEL 1;
+COMP "ad_do<0>" LOCATE = SITE "P33" LEVEL 1;
+COMP "ad_do<1>" LOCATE = SITE "P50" LEVEL 1;
+COMP "ad_do<2>" LOCATE = SITE "P64" LEVEL 1;
+COMP "ad_do<3>" LOCATE = SITE "P83" LEVEL 1;
+COMP "ad_ws<0>" LOCATE = SITE "P36" LEVEL 1;
+COMP "ad_ws<1>" LOCATE = SITE "P56" LEVEL 1;
+COMP "ad_ws<2>" LOCATE = SITE "P70" LEVEL 1;
+COMP "ad_ws<3>" LOCATE = SITE "P84" LEVEL 1;
+COMP "mcu_cmd_data_sw" LOCATE = SITE "P20" LEVEL 1;
+COMP "ad_l3data<0>" LOCATE = SITE "P49" LEVEL 1;
+COMP "ad_l3data<1>" LOCATE = SITE "P59" LEVEL 1;
+COMP "ad_l3data<2>" LOCATE = SITE "P72" LEVEL 1;
+COMP "ad_l3data<3>" LOCATE = SITE "P86" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "P99" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "P98" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "P27" LEVEL 1;
+COMP "mcu_wr" LOCATE = SITE "P19" LEVEL 1;
+COMP "mcu_data<0>" LOCATE = SITE "P3" LEVEL 1;
+COMP "mcu_data<1>" LOCATE = SITE "P4" LEVEL 1;
+COMP "mcu_data<2>" LOCATE = SITE "P5" LEVEL 1;
+COMP "mcu_data<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "mcu_data<4>" LOCATE = SITE "P9" LEVEL 1;
+COMP "mcu_data<5>" LOCATE = SITE "P10" LEVEL 1;
+COMP "mcu_data<6>" LOCATE = SITE "P12" LEVEL 1;
+COMP "mcu_data<7>" LOCATE = SITE "P13" LEVEL 1;
+COMP "mcu_l3md" LOCATE = SITE "P34" LEVEL 1;
+COMP "mcu_l3data" LOCATE = SITE "P28" LEVEL 1;
+COMP "ad_l3clk<0>" LOCATE = SITE "P43" LEVEL 1;
+COMP "ad_l3clk<1>" LOCATE = SITE "P61" LEVEL 1;
+COMP "ad_l3clk<2>" LOCATE = SITE "P77" LEVEL 1;
+COMP "ad_l3clk<3>" LOCATE = SITE "P89" LEVEL 1;
+COMP "ad_l3md<0>" LOCATE = SITE "P44" LEVEL 1;
+COMP "ad_l3md<1>" LOCATE = SITE "P62" LEVEL 1;
+COMP "ad_l3md<2>" LOCATE = SITE "P78" LEVEL 1;
+COMP "ad_l3md<3>" LOCATE = SITE "P90" LEVEL 1;
+COMP "ad_bck<0>" LOCATE = SITE "P37" LEVEL 1;
+COMP "ad_bck<1>" LOCATE = SITE "P57" LEVEL 1;
+COMP "ad_bck<2>" LOCATE = SITE "P71" LEVEL 1;
+COMP "ad_bck<3>" LOCATE = SITE "P85" LEVEL 1;
+PIN clk_gen_ins/DCM_SP_INST_pin<10> = BEL "clk_gen_ins/DCM_SP_INST" PINNAME
+        CLKIN;
+PIN "clk_gen_ins/DCM_SP_INST_pin<10>" CLOCK_DEDICATED_ROUTE = FALSE;
+SCHEMATIC END;
+

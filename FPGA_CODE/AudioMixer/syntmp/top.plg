@@ -1,0 +1,12 @@
+@P:  Worst Slack : -2.713
+@P:  top|clk_gen_ins.CLKDV_BUF_derived_clock - Estimated Frequency : 55.3 MHz
+@P:  top|clk_gen_ins.CLKDV_BUF_derived_clock - Requested Frequency : 65.0 MHz
+@P:  top|clk_gen_ins.CLKDV_BUF_derived_clock - Estimated Period : 18.086
+@P:  top|clk_gen_ins.CLKDV_BUF_derived_clock - Requested Period : 15.373
+@P:  top|clk_gen_ins.CLKDV_BUF_derived_clock - Slack : -2.713
+@P: top Part : xc3s50avq100-5
+@P: top I/O primitives : 52
+@P: top I/O Register bits : 0
+@P: top Register bits (Non I/O) : 2113 (150%)
+@P: top Total Luts : 11134 (790%)
+@P:  CPU Time : 0h:01m:57s

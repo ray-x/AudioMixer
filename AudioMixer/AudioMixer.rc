@@ -1,0 +1,555 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\AudioMixer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\AudioMixer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 AudioMixer"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "AudioMixer 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_AUDIOMIXER_DIALOG DIALOGEX 0, 0, 231, 184
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "混频器配置"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "关闭",IDCANCEL,135,145,66,18
+    PUSHBUTTON      "输入音量配置",IDC_INPUT_GAIN,35,35,67,21
+    PUSHBUTTON      "输出音量配置",IDC_OUTPUT,135,35,67,21
+    PUSHBUTTON      "混频设置",IDC_BUTTON3,35,95,64,20
+    PUSHBUTTON      "配置管理",IDC_BUTTON4,135,95,65,21
+    PUSHBUTTON      "应用",IDC_BUTTON_APPLY,38,143,58,17
+END
+
+IDD_PROPPAGEL_INPUT_VOLCTL DIALOG DISCARDABLE  0, 0, 248, 156
+STYLE WS_CHILD | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "输入音量配置"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,10,33,19,83
+    LTEXT           "输入1",IDC_STATIC,8,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER3,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,65,33,19,83
+    LTEXT           "输入2",IDC_STATIC,40,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER2,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,37,33,19,83
+    LTEXT           "输入3",IDC_STATIC,65,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER4,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,90,33,19,83
+    LTEXT           "输入4",IDC_STATIC,90,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER5,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,126,33,19,83
+    LTEXT           "输入5",IDC_STATIC,126,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER6,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,156,33,19,83
+    LTEXT           "输入6",IDC_STATIC,151,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER7,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,186,33,19,83
+    LTEXT           "输入7",IDC_STATIC,181,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER8,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,213,33,19,83
+    LTEXT           "输入8",IDC_STATIC,211,16,20,8
+    GROUPBOX        "5~8路",IDC_STATIC,121,5,115,118
+    GROUPBOX        "1~4路",IDC_STATIC,5,5,110,118
+    GROUPBOX        "",IDC_STATIC,47,119,158,17,NOT WS_VISIBLE
+    CONTROL         "四路",IDC_RADIO_FOURCH,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,47,125,31,10
+    CONTROL         "八路",IDC_RADIO_8CH,"Button",BS_AUTORADIOBUTTON,157,125,
+                    31,10
+    PUSHBUTTON      "应用",IDC_BUTTON_APPLY_IVOLCHANGE,97,136,52,13
+END
+
+IDD_PROPPAGEL_OUTPUT_VOLCTL DIALOG DISCARDABLE  0, 0, 248, 156
+STYLE WS_CHILD | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "输出音量配置"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,10,33,19,83
+    LTEXT           "输出1",IDC_STATIC,8,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER3,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,65,33,19,83
+    LTEXT           "输出2",IDC_STATIC,40,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER2,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,37,33,19,83
+    LTEXT           "输出3",IDC_STATIC,65,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER4,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,90,33,19,83
+    LTEXT           "输出4",IDC_STATIC,90,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER5,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,126,33,19,83
+    LTEXT           "输出5",IDC_STATIC,126,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER6,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,156,33,19,83
+    LTEXT           "输出6",IDC_STATIC,151,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER7,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,186,33,19,83
+    LTEXT           "输出7",IDC_STATIC,181,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER8,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,213,33,19,83
+    LTEXT           "输出8",IDC_STATIC,211,16,20,8
+    GROUPBOX        "5~8路",IDC_STATIC,121,5,115,118
+    GROUPBOX        "1~4路",IDC_STATIC,5,5,110,118
+    GROUPBOX        "",IDC_STATIC,47,122,158,17,NOT WS_VISIBLE
+    CONTROL         "四路",IDC_RADIO_FOURCH,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,51,128,31,10
+    CONTROL         "八路",IDC_RADIO_8CH,"Button",BS_AUTORADIOBUTTON,155,127,
+                    31,10
+    PUSHBUTTON      "应用",IDC_BUTTON_APPLY_OUTVOL,93,140,50,14
+END
+
+IDD_VOL DIALOG DISCARDABLE  0, 0, 197, 174
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,21,148,50,14
+    PUSHBUTTON      "取消",IDCANCEL,126,148,51,14
+    CONTROL         "Tab1",IDC_VOL_TAB,"SysTabControl32",0x0,7,7,185,133
+END
+
+IDD_MIXCONF DIALOG DISCARDABLE  0, 0, 208, 192
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "混频通道配置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,33,171,50,14
+    PUSHBUTTON      "取消",IDCANCEL,124,171,50,14
+    CONTROL         "Tab1",IDC_TAB_MIX,"SysTabControl32",0x0,7,7,194,159
+END
+
+IDD_PROPPAGEL_MIXCTL DIALOG DISCARDABLE  0, 0, 252, 204
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER_INPUT1,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,10,33,19,83
+    LTEXT           "输入1",IDC_STATIC,8,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER_INPUT3,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,65,33,19,83
+    LTEXT           "输入2",IDC_STATIC,40,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER_INPUT2,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,37,33,19,83
+    LTEXT           "输入3",IDC_STATIC,65,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER_INPUT4,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,90,33,19,83
+    LTEXT           "输入4",IDC_STATIC,90,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER_INPUT5,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,129,33,19,83
+    LTEXT           "输入5",IDC_STATIC,129,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER_INPUT6,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,159,33,19,83
+    LTEXT           "输入6",IDC_STATIC,154,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER_INPUT7,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,189,33,19,83
+    LTEXT           "输入7",IDC_STATIC,184,16,20,8
+    CONTROL         "Slider1",IDC_SLIDER_INPUT8,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,216,33,19,83
+    LTEXT           "输入8",IDC_STATIC,214,16,20,8
+    GROUPBOX        "5~8路",IDC_STATIC,124,5,119,145
+    GROUPBOX        "1~4路",IDC_STATIC,5,5,115,145
+    CONTROL         "",IDC_CHECK_MIX1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,120,10,8
+    CONTROL         "",IDC_CHECK_MIX2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    40,120,10,8
+    CONTROL         "",IDC_CHECK_MIX3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    70,120,10,8
+    CONTROL         "",IDC_CHECK_MIX4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    95,120,10,8
+    CONTROL         "",IDC_CHECK_MIX5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    133,120,10,8
+    CONTROL         "",IDC_CHECK_MIX6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    163,120,10,8
+    CONTROL         "",IDC_CHECK_MIX7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    193,120,10,8
+    CONTROL         "",IDC_CHECK_MIX8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    218,120,10,8
+    LTEXT           "通道1配置",IDC_CHNUM,103,154,47,8,NOT WS_GROUP
+    GROUPBOX        "",IDC_STATIC,14,153,211,29,NOT WS_VISIBLE
+    CONTROL         "四路",IDC_RADIO_4,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,52,163,31,10
+    CONTROL         "八路",IDC_RADIO_8,"Button",BS_AUTORADIOBUTTON,171,165,
+                    31,10
+    PUSHBUTTON      "应用",IDC_BUTTON_APPLY,100,176,50,14
+END
+
+IDD_DIALOG_SYSMGR DIALOG DISCARDABLE  0, 0, 207, 177
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "设备连接属性"
+FONT 10, "宋体"
+BEGIN
+    GROUPBOX        "通信方式选择",IDC_STATIC,32,121,148,27
+    CONTROL         "串口",IDC_RADIO_SERIAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,39,133,32,10
+    CONTROL         "USB",IDC_RADIO_USB,"Button",BS_AUTORADIOBUTTON,123,132,
+                    31,10
+    GROUPBOX        "串口配置",IDC_STATIC,23,13,88,74
+    LTEXT           "端口",IDC_STATIC,27,25,17,8
+    LTEXT           "比特率",IDC_STATIC,27,49,25,8
+    LTEXT           "固件升级",IDC_STATIC,13,99,33,8
+    EDITTEXT        IDC_EDIT_FIRMWARE_NAME,47,98,77,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览",IDC_BUTTON_BROWSER,129,97,24,14
+    PUSHBUTTON      "升级",IDC_BUTTON_UPGRADE,162,97,23,14
+    COMBOBOX        IDC_COMBO_PORT,53,24,53,46,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BAUDRATE,52,49,54,43,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "数据",IDC_STATIC,27,70,25,8
+    COMBOBOX        IDC_COMBO_DATAWIDTH,52,70,54,43,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROPPAGEL_CONFIG_MGR DIALOG DISCARDABLE  0, 0, 369, 300
+STYLE WS_CHILD | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "配置管理"
+FONT 10, "MS Sans Serif"
+BEGIN
+END
+
+IDD_DIALOG_SCHEME DIALOGEX 0, 0, 233, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "方案管理"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,44,159,50,14
+    PUSHBUTTON      "取消",IDCANCEL,132,160,50,14
+    GROUPBOX        "混频方案",IDC_STATIC,19,11,199,146
+    LTEXT           "编号",IDC_STATIC,25,23,17,8
+    LTEXT           "方案名称",IDC_STATIC,89,22,41,8
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,166,36,44,12
+    PUSHBUTTON      "调用",IDC_BUTTON_APPLY,166,56,44,12
+    PUSHBUTTON      "清除",IDC_BUTTON_EMPTY,166,76,44,12
+    PUSHBUTTON      "导出",IDC_BUTTON_EXPORT,166,96,44,12
+    PUSHBUTTON      "导入",IDC_BUTTON_IMPORT,166,116,44,12
+    CONTROL         "List2",IDC_LIST_SCHEME,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_AUTOARRANGE | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,24,53,140,99,WS_EX_ACCEPTFILES
+    EDITTEXT        IDC_EDIT_SCHEME_NAME,54,36,110,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCHEME_NUM,24,36,30,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_WAIT DIALOG DISCARDABLE  0, 0, 187, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,130,12,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,31,50,14
+    LTEXT           "设置保存中，请稍候......",IDC_STR_STATUS,18,24,104,18
+END
+
+IDD_PROPPAGEL_VOLCTL DIALOG DISCARDABLE  0, 0, 275, 196
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Property Page"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "AudioMixer Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "AudioMixer\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "AudioMixer.EXE\0"
+            VALUE "ProductName", "AudioMixer 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_AUDIOMIXER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_PROPPAGEL_INPUT_VOLCTL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 241
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_PROPPAGEL_OUTPUT_VOLCTL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 241
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_VOL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_MIXCONF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_PROPPAGEL_MIXCTL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_DIALOG_SYSMGR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_PROPPAGEL_CONFIG_MGR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+
+    IDD_DIALOG_SCHEME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG_WAIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_PROPPAGEL_VOLCTL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_SYSMGR DLGINIT
+BEGIN
+    IDC_COMBO_PORT, 0x403, 7, 0
+0xaeb4, 0xdabf, 0x312d, "\000" 
+    IDC_COMBO_PORT, 0x403, 7, 0
+0xaeb4, 0xdabf, 0x322d, "\000" 
+    IDC_COMBO_PORT, 0x403, 7, 0
+0xaeb4, 0xdabf, 0x332d, "\000" 
+    IDC_COMBO_PORT, 0x403, 7, 0
+0xaeb4, 0xdabf, 0x342d, "\000" 
+    IDC_COMBO_PORT, 0x403, 7, 0
+0xaeb4, 0xdabf, 0x352d, "\000" 
+    IDC_COMBO_PORT, 0x403, 7, 0
+0xaeb4, 0xdabf, 0x362d, "\000" 
+    IDC_COMBO_BAUDRATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBO_BAUDRATE, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_COMBO_BAUDRATE, 0x403, 7, 0
+0x3131, 0x3032, 0x3030, "\000" 
+    IDC_COMBO_DATAWIDTH, 0x403, 6, 0
+0x2d37, 0x6962, 0x0074, 
+    IDC_COMBO_DATAWIDTH, 0x403, 6, 0
+0x2d38, 0x6962, 0x0074, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 AudioMixer(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\AudioMixer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

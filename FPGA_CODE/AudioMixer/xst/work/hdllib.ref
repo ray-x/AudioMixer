@@ -1,0 +1,9 @@
+MO cmd_decoder NULL ../src/cmd_decoder.v vlg65/cmd__decoder.bin 1263107086
+MO ws_bck_gen NULL ../src/ws_bck_gen.v vlg3E/ws__bck__gen.bin 1263107086
+MO clk_gen NULL clk_gen.v vlg6B/clk__gen.bin 1263107086
+MO mul_gain NULL ../src/mul_gain.v vlg50/mul__gain.bin 1263107086
+MO top NULL ../src/top.v vlg6F/top.bin 1263107086
+MO channel_rx NULL ../src/channel_rx.v vlg72/channel__rx.bin 1263107086
+MO adder16_8 NULL ../src/adder16_8.v vlg5A/adder16__8.bin 1263107086
+MO channel_tx NULL ../src/channel_tx.v vlg7C/channel__tx.bin 1263107086
+MO adder16 NULL ../src/adder16.v vlg5F/adder16.bin 1263107086
